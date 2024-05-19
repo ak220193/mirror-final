@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import img1 from "../../assets/photo-1558430373-5ff2b47eb71d.avif";
 import img2 from "../../assets/free-photo-of-close-up-of-tattooing.jpeg";
 import img3 from "../../assets/girl-2615021_1280.jpg";
@@ -7,6 +7,7 @@ import img5 from "../../assets/kristian-angelo-xyJZvUL4_TY-unsplash.jpg";
 import img6 from "../../assets/pexels-photo-2768618.webp";
 import img7 from "../../assets/pexels-photo-3163994.webp";
 import img8 from "../../assets/photo-1558430373-5ff2b47eb71d.avif";
+
 
 const HeroCarousel = () => {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8];
@@ -38,7 +39,7 @@ const HeroCarousel = () => {
             className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500"
             style={{
               opacity: index === currentIndex ? 1 : 0,
-              zIndex: index === currentIndex ? 1 : 0
+              zIndex: index === currentIndex ? 1 : 0,
             }}
           />
         ))}
