@@ -10,6 +10,7 @@ body {
     box-sizing: border-box;
     background-color: black;
     transition: 1.5s ease-in all;
+    scroll-behavior: smooth;
 }
 
 @layer base {
@@ -23,7 +24,7 @@ body {
       @apply uppercase font-primary tracking-[0.08em];
     }
     .h1 {
-      @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-tertiary mb-4;
+      @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none  mb-4;
     }
     .h2 {
       @apply text-[40px] xl:text-[85px] text-dark uppercase font-primary max-w-[236px] leading-none mb-[38px];
