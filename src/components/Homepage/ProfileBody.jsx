@@ -37,9 +37,12 @@ const ProfileBody = () => {
 
   return (
     <div className="w-full h-screen">
-    <div className="w-full">
-    <h1 className="text-3xl text-white font-semibold uppercase text-center px-4 py-8"> 关于 Guānyú </h1>
-    </div>
+      <div className="w-full">
+        <h1 className="text-3xl text-white font-semibold uppercase text-center px-4 py-8">
+          {" "}
+          关于 Guānyú{" "}
+        </h1>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
         {/* First Grid */}
         <div className="w-full mt-2 lg:w-auto lg:ml-5 lg:mt-5 2xl:ml-10 2xl:mt-5">
