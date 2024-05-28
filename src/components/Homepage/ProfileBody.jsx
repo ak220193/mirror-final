@@ -36,21 +36,20 @@ const ProfileBody = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-full">
       <div className="w-full">
         <h1 className="text-3xl text-white font-semibold uppercase text-center px-4 py-8">
-          {" "}
-          关于 Guānyú{" "}
+          关于 Guānyú
         </h1>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
         {/* First Grid */}
-        <div className="w-full mt-2 lg:w-auto lg:ml-5 lg:mt-5 2xl:ml-10 2xl:mt-5">
+        <div className="w-[100%] mb-2 ml-2">
           <img
             src={images[currentIndex]}
             alt={`Profile ${currentIndex + 1}`}
-            className="w-full h-[40rem] border rounded-md object-cover"
-          />
+            className="w-full border rounded-md object-cover"
+           />  
         </div>
         {/* Second Grid */}
         <div
