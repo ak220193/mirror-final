@@ -14,32 +14,32 @@ const Services = () => {
     {
       img: img1,
       title: "Full Sleeve Tattoo",
-      description: "Explore the Artistry of Full-Body Tattoos",
+      description: "Unleash Your Art with Full-Sleeve Tattoos",
     },
     {
       img: img2,
       title: "Tattoo Stories",
-      description: "Share Your Stories Behind Full-Body Tattoos",
+      description: "Every Tattoo Has a Story - What's Yours",
     },
     {
       img: img3,
       title: "Mandala Design",
-      description: "Best in class Mandala Design",
+      description: "Experience Perfection with Mandala Designs",
     },
     {
       img: img4,
-      title: "Ear & Nose Piercing",
-      description: "Elevate Your Aesthetic with Ear and Nose Piercings",
+      title: "Piercing",
+      description: "Enhance Your Fashion with Unique Piercings",
     },
     {
       img: img5,
       title: "Iconic Design",
-      description: "Elevate Your Visuals with Striking Icon Patterns",
+      description: "Discover the Allure of Iconic Patterns",
     },
     {
       img: img6,
       title: "Multi-color Design",
-      description: "Celebrate Diversity with Multi-color Masterpieces",
+      description: "Bring Life to Art with Multi-Color Masterpieces",
     },
   ];
 
@@ -53,7 +53,7 @@ const Services = () => {
           y: 0,
           delay: index * 0.2,
           duration: 1,
-          ease: "circ.inOut",
+          ease:"expo",
         }
       );
     });
