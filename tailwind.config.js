@@ -10,8 +10,7 @@ export default {
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
         'primary': ['Raleway', 'sans-serif'],
-        // 'algerian': ['Algerian', 'serif'],
-        // 'montestrat': ['montestrat']
+        
       },
       container: {
         padding: {
