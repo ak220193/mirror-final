@@ -60,7 +60,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="w-full h-full bg-white flex justify-center rounded-md mt-5">
+    <div className="w-full h-full bg-white flex justify-center rounded-md py-10">
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-center items-start mb-5">
         {servicesData.map((service, index) => (
           <div key={index} className="flex flex-col items-center">
