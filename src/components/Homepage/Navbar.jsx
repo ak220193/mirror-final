@@ -36,10 +36,10 @@ const Navbar = () => {
               <IoCloseSharp className="w-8 h-8" />
             </button>
             <a href="/" className="text-black font-semibold text-2xl hover:text-red-600">Home</a>
-            <a href="/about" className="text-black font-semibold text-2xl hover:text-red-600">About</a>
-            <a href="/services" className="text-black font-semibold text-2xl hover:text-red-600">Services</a>
-            <a href="/portfolio" className="text-black font-semibold text-2xl hover:text-red-600">Portfolio</a>
-            <a href="/getinked" className="text-black font-semibold text-2xl hover:text-red-600">Get Inked</a>
+            <a href="#" className="text-black font-semibold text-2xl hover:text-red-600">About</a>
+            <a href="#" className="text-black font-semibold text-2xl hover:text-red-600">Services</a>
+            <a href="#" className="text-black font-semibold text-2xl hover:text-red-600">Portfolio</a>
+            <a href="#" className="text-black font-semibold text-2xl hover:text-red-600">Get Inked</a>
             <a href="/aftercare" className="text-black font-semibold text-2xl hover:text-red-600">After Care</a>
           </div>
         )}
@@ -47,17 +47,18 @@ const Navbar = () => {
         {/* Navbar for large screens */}
         <div className="hidden md:flex items-center justify-center w-full  gap-10 lg:gap-10 xl:gap-20 4xl:gap-30 my-5  text-white">
           <a href="/" className="hover:text-red-600 font-semibold text-lg lg:text-xl">Home</a>
-          <a href="/about" className="hover:text-red-600 font-semibold text-lg lg:text-xl">About</a>
-          <a href="/services" className="hover:text-red-600 font-semibold text-lg lg:text-xl">Services</a>
+          <a href="#" className="hover:text-red-600 font-semibold text-lg lg:text-xl">About</a>
+          <a href="#" className="hover:text-red-600 font-semibold text-lg lg:text-xl">Services</a>
 
           {/* Logo in the center for large screens */}
           <a href="/" className="flex items-center">
             <img src={Logo} alt="Logo" className="h-10 lg:h-12 mx-4" />
           </a>
 
-          <a href="/portfolio" className="hover:text-red-600 font-semibold text-lg lg:text-xl">Portfolio</a>
-          <a href="/getinked" className="hover:text-red-600 font-semibold text-lg lg:text-xl">Get Inked</a>
-          <a href="/aftercare" className="hover:text-red-600 font-semibold text-lg lg:text-xl">After Care</a>
+          <a href="#" className="hover:text-red-600 font-semibold text-lg lg:text-xl">Portfolio</a>
+          <a href="#" className="hover:text-red-600 font-semibold text-lg lg:text-xl">After Care</a>
+          <a href="#" className="hover:text-red-600 font-semibold text-lg lg:text-xl">Get Inked</a>
+          
         </div>
       </div>
     </nav>
