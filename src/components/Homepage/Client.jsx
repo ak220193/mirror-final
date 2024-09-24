@@ -42,31 +42,43 @@ const Client = () => {
 
   return (
     <>
-      <div className="relative py-10 text-white">
+      <div className="relative py-16 text-white">
         {/* Background image */}
         <img src={img1} alt="Background" className="w-full h-full object-cover opacity-30 absolute top-0 left-0 z-0" />
+
+        {/* Section Heading and Description */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center mb-12">
+          <h3 className="text-4xl font-extrabold text-white mb-4 font-primary italic tracking-wider">Milestones of Mastery</h3>
+          <p className="text-xl text-gray-300">
+            We are proud to have transformed thousands of lives through our artistry and passion. Here are some of the milestones we have reached over the years, thanks to our clients' trust and support.
+          </p>
+        </div>
 
         {/* Flex container */}
         <div className="relative z-10 flex flex-wrap justify-around items-center max-w-7xl mx-auto p-10 gap-10">
           {/* Individual stat with pop-in effect */}
-          <div className="relative flex flex-col items-center mb-10 gap-10">
-            <div className="number text-5xl font-bold">{tattoos}</div>
+          <div className="relative flex flex-col items-center mb-10 gap-6">
+            <div className="number text-6xl font-bold text-yellow-400">{tattoos}</div>
             <h3 className="text-2xl font-semibold">Tattoos</h3>
+            
           </div>
 
-          <div className="relative flex flex-col items-center mb-10 gap-10">
-            <div className="number text-5xl font-bold">{clients}</div>
+          <div className="relative flex flex-col items-center mb-10 gap-6">
+            <div className="number text-6xl font-bold text-yellow-400">{clients}</div>
             <h3 className="text-2xl font-semibold">Clients</h3>
+           
           </div>
 
-          <div className="relative flex flex-col items-center mb-10 gap-10">
-            <div className="number text-5xl font-bold">{stencils}</div>
+          <div className="relative flex flex-col items-center mb-10 gap-6">
+            <div className="number text-6xl font-bold text-yellow-400">{stencils}</div>
             <h3 className="text-2xl font-semibold">Stencils</h3>
+            
           </div>
 
-          <div className="relative flex flex-col items-center mb-10 gap-10">
-            <div className="number text-5xl font-bold">{piercings}</div>
+          <div className="relative flex flex-col items-center mb-10 gap-6">
+            <div className="number text-6xl font-bold text-yellow-400">{piercings}</div>
             <h3 className="text-2xl font-semibold">Piercings</h3>
+            
           </div>
         </div>
       </div>

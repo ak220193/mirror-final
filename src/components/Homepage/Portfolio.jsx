@@ -18,12 +18,14 @@ import img15 from "../../assets/gallery/7.png";
 import img16 from "../../assets/gallery/8.png";
 import img17 from "../../assets/untitled folder/port-list-img-14-1.jpg";
 import img18 from "../../assets/untitled folder/port-list-img-13-1.jpg";
+import Marquee from "react-fast-marquee";
 
 const Portfolio = () => {
-  const images = [
-    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16,img17,img18
-  ];
+  const row1Images = [img1, img2, img3, img4, img5, img6];
+  const row2Images = [img7, img8, img9, img10, img11, img12];
+  const row3Images = [img13, img14, img15, img16, img17, img18];
 
+  // GSAP animation for image scaling when loaded
   useEffect(() => {
     gsap.fromTo(
       ".portfolio-image",
@@ -43,7 +45,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className=" text-white py-10">
+    <div className="text-white py-10">
       <div className="container mx-auto flex flex-col justify-center items-center text-center px-5">
         <h3 className="text-xl md:text-2xl font-light tracking-wide mb-2">
           Check out our
@@ -51,23 +53,72 @@ const Portfolio = () => {
         <h1 className="text-4xl md:text-5xl font-bold tracking-widest mb-4 font-poppins">
           Art Showcase
         </h1>
-        <p className="text-sm md:text-base text-gray-400 mb-8 ">
-        Immerse yourself in a vibrant collection of artworks that celebrate creativity in all its forms. From stunning digital illustrations to captivating photography and traditional paintings, our showcase brings together a variety of artistic voices. Each piece is an invitation to pause, reflect, and appreciate the depth of artistic expression.
+        <p className="text-sm md:text-base text-gray-400 mb-8">
+          Immerse yourself in a vibrant collection of artworks that celebrate creativity in all its forms. From stunning digital illustrations to captivating photography and traditional paintings, our showcase brings together a variety of artistic voices. Each piece is an invitation to pause, reflect, and appreciate the depth of artistic expression.
         </p>
       </div>
 
-      {/* Standard Responsive Grid for Images */}
-      <div className="container mx-auto">
-        <div className="portfolio-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 p-4">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`portfolio ${index + 1}`}
-              className="portfolio-image w-60 h-80 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
-            />
-          ))}
-        </div>
+      {/* Marquee for row 1 (Right to Left) */}
+      <div className="container mx-auto mt-10">
+        <Marquee
+          pauseOnHover={true}
+          speed={50}
+          gradient={false}
+          direction="right"
+        >
+          <div className="flex gap-4 p-4">
+            {row1Images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`portfolio row 1 ${index + 1}`}
+                className="portfolio-image w-60 h-80 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
+              />
+            ))}
+          </div>
+        </Marquee>
+      </div>
+
+      {/* Marquee for row 2 (Left to Right) */}
+      <div className="container mx-auto mt-10">
+        <Marquee
+          pauseOnHover={true}
+          speed={50}
+          gradient={false}
+          direction="left"
+        >
+          <div className="flex gap-4 p-4">
+            {row2Images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`portfolio row 2 ${index + 1}`}
+                className="portfolio-image w-60 h-80 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
+              />
+            ))}
+          </div>
+        </Marquee>
+      </div>
+
+      {/* Marquee for row 3 (Right to Left) */}
+      <div className="container mx-auto mt-10">
+        <Marquee
+          pauseOnHover={true}
+          speed={50}
+          gradient={false}
+          direction="right"
+        >
+          <div className="flex gap-4 p-4">
+            {row3Images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`portfolio row 3 ${index + 1}`}
+                className="portfolio-image w-60 h-80 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
+              />
+            ))}
+          </div>
+        </Marquee>
       </div>
     </div>
   );
