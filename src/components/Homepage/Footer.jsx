@@ -11,9 +11,9 @@ const Footer = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         
         {/* Column 1: Company Logo and Description */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center">
           <img src={Logo} alt="Tattoo Studio Logo" className="h-16 w-auto mb-4" />
-          <p className="text-sm">
+          <p className="text-sm text-center">
             Welcome to our Tattoo Studio, where art meets skin. Our skilled artists are ready to create the perfect tattoo for you!
           </p>
           
