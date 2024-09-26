@@ -49,7 +49,7 @@ const Footer = () => {
 
       </div>
       <div className="text-center mt-8 text-xs font-poppins italic tracking-wider">
-        © {new Date().getFullYear()} AK DESIGN STUDIO | All rights reserved. | Designed with ❤️ by AK 
+        © {new Date().getFullYear()} WebPixProLabs | All rights reserved. | Designed with ❤️ by AKASH  
       </div>
     </footer>
   );
